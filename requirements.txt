@@ -1,0 +1,8 @@
+# CUDA 12.4 build: covers Pascal (sm_61) through Hopper (sm_90).
+# Blackwell (sm_120) needs the cu128 index and torch>=2.7 instead.
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0+cu124
+transformers>=5.21.0
+accelerate>=1.0
+fastapi>=0.110
+uvicorn[standard]>=0.27
